@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.app {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #232743;
+
+    overflow-x: hidden;
+}
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+.inputBtn {
+    /* This bit sets up the horizontal layout */
+    display: flex;
+    flex-direction: row;
+
+    /* I've used padding so you can see the edges of the elements. */
+    padding: 2px;
+
+    width: 95%;
+
+    input {
+        /* Tell the input to use all the available space */
+        flex-grow: 2;
+        /* And hide the input's outline, so the form looks like the outline */
+        border: none;
+    }
+    input:focus {
+        /* removing the input focus blue box. Put this on the form if you like. */
+        outline: none;
+    }
+    button {
+        /* Just a little styling to make it pretty */
+        border: 1px solid blue;
+        background: blue;
+        color: white;
+        width: 30%;
+    }
+}
+
+
+
+
+@media (max-width: 1326px) {
+    html {
+        font-size: 100% !important;
+    }
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 95% !important;
+    }
+}
+@media (max-width: 1100px) {
+    html {
+        font-size: 90% !important;
+    }
+}
+@media (max-width: 1000px) {
+    html {
+        font-size: 85% !important;
+    }
+}
+@media (max-width: 900px) {
+    html {
+        font-size: 80% !important;
+    }
+}
+@media (max-width: 770px) {
+    html {
+        font-size: 75% !important;
+    }
+}
+@media (max-width: 680px) {
+    html {
+        font-size: 70% !important;
+    }
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 65% !important;
+    }
+}
